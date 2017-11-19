@@ -32,6 +32,8 @@ public class BiodataActivity extends AppCompatActivity {
                 } else {
                     Intent send = new Intent(getApplicationContext(), HasilActivity.class);
                     send.putExtra("nama", nama);
+                    startActivity(send);
+                    finish();
                 }
             }
         });
